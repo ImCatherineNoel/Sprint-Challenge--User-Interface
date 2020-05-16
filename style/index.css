@@ -54,7 +54,10 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    padding: 1.7rem;
 }
+
+
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
@@ -68,7 +71,33 @@ p {
 
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: .7rem auto;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+}
+
+.jumbo{
+    margin: auto;
+    padding-bottom: 20px;  
 }
 
 .top-content {
@@ -110,6 +139,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box {
+    color: yellow;
 }
 
 .bottom-content {
