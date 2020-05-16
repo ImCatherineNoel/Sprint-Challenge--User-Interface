@@ -50,27 +50,29 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+  }
+  
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     padding: 1.7rem;
 }
 
-
-
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 80rem;
     margin: .7rem auto;
     background-color: white;
 }
@@ -86,7 +88,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 header nav a{
@@ -97,26 +99,26 @@ header nav a{
 
 .jumbo{
     margin: auto;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .middle-content h2 {
@@ -132,9 +134,9 @@ header nav a{
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -173,7 +175,7 @@ header nav a{
 }
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
@@ -195,11 +197,67 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .container{
+        max-width: 4rem;
+    }
+    .header{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    header nav a{
+        text-decoration: none;
+        color: black;
+        padding: .2rem;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+  }
+    .middle-content .boxes .box {
+        width: 100%;
+        background: black;
+        margin: 2rem 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        border-bottom: 0.1rem dashed black;
+    }
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 1%;
+        padding-bottom: 2rem;  
+    }
 }
