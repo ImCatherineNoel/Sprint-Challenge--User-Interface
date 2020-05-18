@@ -95,29 +95,28 @@ header nav a{
     text-decoration: none;
     color: black;
     padding: 2rem;
-}
-header nav a:hover{   
-    animation: nav-ani 2s both;
-}
- /* KeyFrames */
-    @keyframes nav-ani {
-        10%, 90% {
-            transform: translate3d(-0.1rem, 0, 0);
+ } 
+    header nav a:hover{animation: nav-ani 0.8s both;
         }
-        
-        20%, 80% {
-            transform: translate3d(0.2rem, 0, 0);
-        }
-        
-        30%, 50%, 70% {
-            transform: translate3d(-0.4rem, 0, 0);
-        }
-        
-        40%, 60% {
-            transform: translate3d(0.4rem, 0, 0);
-        }
-    }
-
+         /* KeyFrames */
+            @keyframes nav-ani {
+                10%, 90% {
+                    transform: translate3d(-0.1rem, 0, 0);
+                }
+                
+                20%, 80% {
+                    transform: translate3d(0.2rem, 0, 0);
+                }
+                
+                30%, 50%, 70% {
+                    transform: translate3d(-0.4rem, 0, 0);
+                }
+                
+                40%, 60% {
+                    transform: translate3d(0.4rem, 0, 0);
+                }
+            }
+    
 
 .jumbo{
     margin: auto;
@@ -235,8 +234,44 @@ footer nav a {
 .hidden-2{
     display: none;
 }
+.more{
+    padding: 5%;
+    text-decoration: none;
+    text-align: left;
+}
 
-        
+.blogimg{
+    display: block;
+    text-align: center;
+}
+.blog-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.blog-post {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 2rem;  
+}
+
+.blog-img {
+    padding-bottom: 5%;  
+}
+
+.blog-post-text{
+    text-indent: -4%;
+}
+
+.apost{
+    padding: 5%;
+    border-bottom: 0.1rem dashed black;
+}
 
 
 
